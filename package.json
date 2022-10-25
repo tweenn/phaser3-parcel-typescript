@@ -13,7 +13,7 @@
 		"clean": "yarn clean:dist && yarn clean:cache",
 		"build": "yarn clean && parcel build --target prod",
 		"serve": "yarn clean && parcel --target dev --port 1234",
-		"deploy": "yarn build && push-dir --dir=dist --branch=gh-pages --force --cleanup"
+		"deploy": "yarn build --public-url ../phaser3-parcel-typescript && push-dir --dir=dist --branch=gh-pages --force --cleanup"
 	},
 	"targets": {
 		"dev": {
